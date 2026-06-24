@@ -27,6 +27,7 @@ const sunglassesPrice: number = holidaySales("sunglasses", 10, 0.16, 0.12);
 const hatPrice: number = holidaySales("hats", 30, 0.16, 0.12);
 
 console.log(`The total price for sunglasses is $${hatPrice}`);
+console.log(`The total price for sunglasses is $${sunglassesPrice}`);
 
 // function expression
 let holidaySales1 = function (
@@ -53,3 +54,7 @@ let holidaySales1 = function (
     discount * totalSalesForIndividualProducts
   );
 };
+
+console.log(
+  `The price for  sunglasses is $${holidaySales1("sunglasses", 50, 0.16, 0.12)}`,
+);
