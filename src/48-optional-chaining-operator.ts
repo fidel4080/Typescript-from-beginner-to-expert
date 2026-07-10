@@ -30,11 +30,7 @@ const courses: Product[] = [
 ];
 
 const numOfStudents = courses.map((course) => {
-  if (course.info) {
-    return course.info.noOfStudents;
-  }
-
-  return undefined;
+  return course.info?.noOfStudents;
 });
 
 console.log(numOfStudents);
