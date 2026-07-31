@@ -9,3 +9,5 @@ function isRepoCommitted(repo: GitRepo): boolean {
 
 let gitCommit = isRepoCommitted(GitRepo.committed);
 console.log(gitCommit);
+
+// use const enum if you don't want the enum object at runtime
