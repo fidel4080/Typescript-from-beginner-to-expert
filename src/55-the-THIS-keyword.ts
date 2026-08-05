@@ -28,3 +28,10 @@ function addition2(a: number, b: number): void {
   console.log("Function", this, a + b);
 }
 addition2.apply({ name: "James" }, [10, 5]);
+
+//--------
+function addition3(a: number, b: number): void {
+  console.log("Function", this, a + b);
+}
+let operation = addition3.bind({ name: "Peter" }, 25, 5);
+operation();
