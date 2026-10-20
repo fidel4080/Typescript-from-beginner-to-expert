@@ -12,7 +12,7 @@ abstract class Robot {
   }
 
   get robotData() {
-    return `${this.name} Robot model ${this.model} has a durability of ${this.durability} and weighs in at ${this.weight}`;
+    return `${this.name} Robot of model ${this.model} has a durability of ${this.durability} and weighs in at ${this.weight}kg`;
   }
 }
 
@@ -48,6 +48,8 @@ class Veax extends Robot {
 
 let avdonRobot = new Avdon(11243, "Avdon5000", "AN2333", "medium", 25);
 console.log(avdonRobot);
+console.log(avdonRobot.robotData);
 
 let veaxRobot = new Veax(76811, "Veaxel9000", "VX7564", "high", 75);
 console.log(veaxRobot);
+console.log(veaxRobot.robotData);
